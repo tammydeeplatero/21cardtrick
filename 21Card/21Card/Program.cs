@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace _21Card
 {
+    /*
     static class Program
     {
         /// <summary>
@@ -19,4 +20,5 @@ namespace _21Card
             Application.Run(new Form1());
         }
     }
+    */
 }

@@ -5,6 +5,7 @@ namespace _21Card
     {
         public Player()
         {
+
         }
     }
 }
