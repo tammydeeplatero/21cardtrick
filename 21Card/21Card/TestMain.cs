@@ -3,6 +3,7 @@ using System;
 public class 
     TestMain
 {
+    /*
     public static void Main(string[] args)
     {
 
@@ -10,4 +11,5 @@ public class
         theDeck.Shuffle();
         theDeck.Deal21();
     }
+    */
 }
