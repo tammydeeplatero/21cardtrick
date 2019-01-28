@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace _21cardtrick
 {
-    class Column
+    public class Column
     {
+        //attributes id
     }
+    
+    //method addCard(card)
 }

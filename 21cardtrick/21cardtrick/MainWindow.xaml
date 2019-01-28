@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_21cardtrick"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="956.703" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="883*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="132" Margin="57,106,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00" HorizontalAlignment="Left" Height="132" Margin="543,212,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy" HorizontalAlignment="Left" Height="132" Margin="281,282,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy1" HorizontalAlignment="Left" Height="132" Margin="57,238,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button Content="Play Game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="cmd_PLayGame"/>
+        <Button Content="Column1" HorizontalAlignment="Left" Margin="57,60,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Column2" HorizontalAlignment="Left" Margin="281,60,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Column3" HorizontalAlignment="Left" Margin="507,60,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
