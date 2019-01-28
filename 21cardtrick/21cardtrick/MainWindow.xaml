@@ -5,20 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_21cardtrick"
         mc:Ignorable="d"
-        Title="MainWindow" Height="956.703" Width="800">
+        Title="MainWindow" Height="1141.617" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="883*"/>
-            <RowDefinition Height="43*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <Image HorizontalAlignment="Left" Height="132" Margin="57,106,0,0" VerticalAlignment="Top" Width="86"/>
-        <Image x:Name="_00" HorizontalAlignment="Left" Height="132" Margin="543,212,0,0" VerticalAlignment="Top" Width="86"/>
-        <Image x:Name="_00_Copy" HorizontalAlignment="Left" Height="132" Margin="281,282,0,0" VerticalAlignment="Top" Width="86"/>
         <Image x:Name="_00_Copy1" HorizontalAlignment="Left" Height="132" Margin="57,238,0,0" VerticalAlignment="Top" Width="86"/>
         <Button Content="Play Game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="cmd_PLayGame"/>
-        <Button Content="Column1" HorizontalAlignment="Left" Margin="57,60,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Column2" HorizontalAlignment="Left" Margin="281,60,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Column3" HorizontalAlignment="Left" Margin="507,60,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Column1" Content="Column1" HorizontalAlignment="Left" Margin="57,60,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="cmd_Column1"/>
+        <Button Content="Column2" HorizontalAlignment="Left" Margin="281,60,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="cmd_Column2"/>
+        <Button Content="Column3" HorizontalAlignment="Left" Margin="507,60,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="cmd_Column3"/>
+        <Image x:Name="_00_Copy2" HorizontalAlignment="Left" Height="132" Margin="57,370,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="57,506,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy3" HorizontalAlignment="Left" Height="132" Margin="57,637,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy4" HorizontalAlignment="Left" Height="132" Margin="57,770,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy5" HorizontalAlignment="Left" Height="132" Margin="57,907,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="281,118,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy" HorizontalAlignment="Left" Height="132" Margin="281,250,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy6" HorizontalAlignment="Left" Height="132" Margin="281,382,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="281,518,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy7" HorizontalAlignment="Left" Height="132" Margin="281,649,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy8" HorizontalAlignment="Left" Height="132" Margin="281,782,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy9" HorizontalAlignment="Left" Height="132" Margin="281,919,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="507,118,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy10" HorizontalAlignment="Left" Height="132" Margin="507,250,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy11" HorizontalAlignment="Left" Height="132" Margin="507,382,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image HorizontalAlignment="Left" Height="132" Margin="507,518,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy12" HorizontalAlignment="Left" Height="132" Margin="507,649,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy13" HorizontalAlignment="Left" Height="132" Margin="507,782,0,0" VerticalAlignment="Top" Width="86"/>
+        <Image x:Name="_00_Copy14" HorizontalAlignment="Left" Height="132" Margin="507,919,0,0" VerticalAlignment="Top" Width="86"/>
 
     </Grid>
 </Window>
