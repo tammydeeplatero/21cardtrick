@@ -9,6 +9,9 @@ namespace _21cardtrick
     class Deck
     {
         private List<Card> _deck;
+        private int currentCard;
+        private Card[] deck;
+        private const int DECK_21 = 21;
 
         private void GenerateDeck()
         {
@@ -28,5 +31,28 @@ namespace _21cardtrick
         {
 
         }
-    }
+
+
+        public Card DealCard()
+        {
+            if (currentCard < deck.Length)
+                return deck[currentCard++];
+            else
+                return null;
+        }
+
+
+        public void Deal21()
+        {
+            for (int i = 0; i < DECK_21; i++)
+            {
+
+
+                Console.Write(i + " [" + DealCard() + "]");
+
+                //if ((i + 1) % 4 == 0)
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
 }

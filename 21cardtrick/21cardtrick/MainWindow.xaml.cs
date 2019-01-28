@@ -20,9 +20,34 @@ namespace _21cardtrick
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool GameStarted = false;
+        Deck Deck;
+
+
         public MainWindow()
         {
             InitializeComponent();
+            Deck = new Deck();
+        }
+
+        private void cmd_PLayGame(object sender, RoutedEventArgs e)
+        {
+            GameStarted = true; 
+        }
+
+        private void cmd_Column1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cmd_Column2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cmd_Column3(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
