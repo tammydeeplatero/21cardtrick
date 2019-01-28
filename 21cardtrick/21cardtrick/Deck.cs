@@ -11,7 +11,7 @@ namespace _21cardtrick
         private List<Card> _deck;
         private int currentCard;
         private Card[] deck;
-        private const int DECK_21 = 21;
+        private const int DECK_21 = 21; 
 
         private void GenerateDeck()
         {
