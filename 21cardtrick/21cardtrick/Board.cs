@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21cardtrick
 {
-    class Board
+    public class Board
     {
-    }
+    }   
 }
