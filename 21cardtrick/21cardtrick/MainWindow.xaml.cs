@@ -20,9 +20,15 @@ namespace _21cardtrick
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool GameStarted = false;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void cmd_PLayGame(object sender, RoutedEventArgs e)
+        {
+            GameStarted = true; 
         }
     }
 }
