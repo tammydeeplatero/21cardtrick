@@ -1,0 +1,15 @@
+H:\dev\21cardtrick\21cardtrick\21cardtrick\bin\Debug\21cardtrick.exe.config
+H:\dev\21cardtrick\21cardtrick\21cardtrick\bin\Debug\21cardtrick.exe
+H:\dev\21cardtrick\21cardtrick\21cardtrick\bin\Debug\21cardtrick.pdb
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.csprojAssemblyReference.cache
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\MainWindow.g.cs
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\App.g.cs
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick_MarkupCompile.cache
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick_MarkupCompile.lref
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\MainWindow.baml
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.g.resources
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\_21cardtrick.Properties.Resources.resources
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.csproj.GenerateResource.cache
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.csproj.CoreCompileInputs.cache
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.exe
+H:\dev\21cardtrick\21cardtrick\21cardtrick\obj\Debug\21cardtrick.pdb
