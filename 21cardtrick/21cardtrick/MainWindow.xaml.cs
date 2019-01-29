@@ -22,7 +22,7 @@ namespace _21cardtrick
     {
         public static bool GameStarted = false;
         Deck Deck;
-
+        internal object imgTheCard;
 
         public MainWindow()
         {

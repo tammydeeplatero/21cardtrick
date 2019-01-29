@@ -44,5 +44,10 @@ namespace _21cardtrick
         {
             return FaceUp ? CardFaceImg : CardBackImg;
         }
+
+        internal string getFace()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
