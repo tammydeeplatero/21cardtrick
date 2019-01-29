@@ -11,14 +11,14 @@ namespace _21cardtrick
         private List<Card> _deck;
         private int currentCard;
         private Card[] deck;
-        private const int DECK_21 = 21; 
+        private const int DECK_21 = 21;
 
         private void GenerateDeck()
         {
             _deck = new List<Card>();
             for (int i = 0; i <= 3; i++)
-            for (int j = 1; j <= 13; j++)
-                _deck.Add(new Card((Card.Suit)i, j));
+                for (int j = 1; j <= 13; j++)
+                    _deck.Add(new Card((Card.Suit)i, j));
             Shuffle();
         }
 
@@ -32,7 +32,6 @@ namespace _21cardtrick
 
         }
 
-
         public Card DealCard()
         {
             if (currentCard < deck.Length)
@@ -40,7 +39,6 @@ namespace _21cardtrick
             else
                 return null;
         }
-
 
         public void Deal21()
         {
@@ -55,4 +53,5 @@ namespace _21cardtrick
             }
             Console.ReadLine();
         }
+    }
 }
