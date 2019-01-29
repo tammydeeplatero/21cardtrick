@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
 
-namespace _21cardtrick
+namespace CS3750CardTrick
 {
     class Dealer
     {
@@ -28,7 +28,11 @@ namespace _21cardtrick
 
         public Dealer()
         {
+<<<<<<< HEAD
+            deck21 = deck.getDeck21();
+=======
             deck21 = deck.Deal21();
+>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
 
 
         }
@@ -94,7 +98,11 @@ namespace _21cardtrick
             img.Stretch = Stretch.Fill;
             // after DealNumber is at least 3
             // selected card is the 11th
+<<<<<<< HEAD
+            window.imgTheCard.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
+=======
             window.imgTheCardRevealed.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
+>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
 
         }
 
@@ -153,4 +161,8 @@ namespace _21cardtrick
 
 
     } // end Dealer()
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
