@@ -6,3 +6,12 @@
 *.dll
 /21cardtrick/.vs/21cardtrick/v15/Server/sqlite3
 /21Card/21Card/obj/Debug
+/21cardtrick/21cardtrick/obj/Debug/21cardtrick.csproj.CoreCompileInputs.cache
+/21cardtrick/21cardtrick/obj/Debug/21cardtrick_MarkupCompile.cache
+/21cardtrick/21cardtrick/obj/Debug/21cardtrick_MarkupCompile.lref
+/21cardtrick/21cardtrick/obj/Debug/MainWindow.g.cs
+/21cardtrick/21cardtrick/obj/Debug/MainWindow.g.i.cs
+*.cache
+/21cardtrick/.vs/21cardtrick/v15/.suo
+/21cardtrick/21cardtrick/bin/Debug
+/21cardtrick/21cardtrick/obj/Debug

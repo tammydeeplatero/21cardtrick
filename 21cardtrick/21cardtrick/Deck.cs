@@ -17,8 +17,8 @@ namespace _21cardtrick
         {
             _deck = new List<Card>();
             for (int i = 0; i <= 3; i++)
-            for (int j = 1; j <= 13; j++)
-                _deck.Add(new Card((Card.Suit)i, j));
+                for (int j = 1; j <= 13; j++)
+                    _deck.Add(new Card((Card.Suit)i, j));
             Shuffle();
         }
 
@@ -42,17 +42,17 @@ namespace _21cardtrick
         }
 
 
-        public void Deal21()
+        public List<Card> Deal21()
         {
             for (int i = 0; i < DECK_21; i++)
             {
-
-
                 Console.Write(i + " [" + DealCard() + "]");
 
                 //if ((i + 1) % 4 == 0)
                 Console.WriteLine();
             }
             Console.ReadLine();
+            return null;
         }
+    }
 }
