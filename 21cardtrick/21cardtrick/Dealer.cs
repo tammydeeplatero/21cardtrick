@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
 
-namespace CS3750CardTrick
+namespace _21cardtrick
 {
     class Dealer
     {
@@ -28,7 +28,7 @@ namespace CS3750CardTrick
 
         public Dealer()
         {
-            deck21 = deck.getDeck21();
+            deck21 = deck.Deal21();
 
 
         }
@@ -94,7 +94,7 @@ namespace CS3750CardTrick
             img.Stretch = Stretch.Fill;
             // after DealNumber is at least 3
             // selected card is the 11th
-            window.imgTheCard.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
+            window.imgTheCardRevealed.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
 
         }
 

@@ -9,6 +9,13 @@ namespace _21cardtrick
     public class Column
     {
         //attributes id
+        int columnNumber;
+
+        public Column(int columnNumber)
+        {
+
+        }
+
         internal void clearList()
         {
             throw new NotImplementedException();

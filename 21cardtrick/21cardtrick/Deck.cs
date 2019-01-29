@@ -42,18 +42,17 @@ namespace _21cardtrick
         }
 
 
-        public void Deal21()
+        public List<Card> Deal21()
         {
             for (int i = 0; i < DECK_21; i++)
             {
-
-
                 Console.Write(i + " [" + DealCard() + "]");
 
                 //if ((i + 1) % 4 == 0)
                 Console.WriteLine();
             }
             Console.ReadLine();
+            return null;
         }
     }
 }
