@@ -8,6 +8,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Controls;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
+using _21cardtrick;
 
 namespace CS3750CardTrick
 {
@@ -28,11 +29,11 @@ namespace CS3750CardTrick
 
         public Dealer()
         {
-<<<<<<< HEAD
-            deck21 = deck.getDeck21();
-=======
+//<<<<<<< HEAD
+            //deck21 = deck.getDeck21();
+//=======
             deck21 = deck.Deal21();
->>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
+//>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
 
 
         }
@@ -98,11 +99,11 @@ namespace CS3750CardTrick
             img.Stretch = Stretch.Fill;
             // after DealNumber is at least 3
             // selected card is the 11th
-<<<<<<< HEAD
-            window.imgTheCard.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
-=======
+//<<<<<<< HEAD
+            //window.imgTheCard.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
+//=======
             window.imgTheCardRevealed.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
->>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
+//>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
 
         }
 
@@ -161,8 +162,5 @@ namespace CS3750CardTrick
 
 
     } // end Dealer()
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
+
