@@ -19,7 +19,7 @@
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <Image x:Name="img1" Height="132" Margin="157,127,64,0" Width="86" VerticalAlignment="Top"/>
-        <Image x:Name="img4" Height="132" Margin="157,259,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img4" Height="132" Margin="157,198,64,0" Width="86" VerticalAlignment="Top"/>
         <Button Content="Play Game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="cmd_PLayGame" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="16"/>
         <Button x:Name="Column1" Content="Column1" Margin="165,83,67,0" Width="75" Height="20" Click="cmd_Column1" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="14">
             <Button.Background>
@@ -36,27 +36,27 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
             </Button.Background>
         </Button>
-        <Image x:Name="img7" Height="132" Margin="157,391,64,0" Width="86" VerticalAlignment="Top"/>
-        <Image x:Name="img10" Height="132" Margin="157,523,64,0" Width="86" VerticalAlignment="Top"/>
-        <Image x:Name="img13" Height="132" Margin="157,655,64,0" Width="86" VerticalAlignment="Top"/>
-        <Image x:Name="img16" Height="132" Margin="157,787,64,0" Width="86" VerticalAlignment="Top"/>
-        <Image x:Name="img19" Height="132" Margin="157,919,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img7" Height="132" Margin="157,264,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img10" Height="132" Margin="157,335,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img13" Height="132" Margin="157,401,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img16" Height="132" Margin="157,472,64,0" Width="86" VerticalAlignment="Top"/>
+        <Image x:Name="img19" Height="132" Margin="157,533,64,0" Width="86" VerticalAlignment="Top"/>
         <Image x:Name="img2" Height="132" Margin="46,127,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img5" Height="132" Margin="46,259,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img8" Height="132" Margin="46,391,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img11" Height="132" Margin="46,523,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img14" Height="132" Margin="46,655,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img17" Height="132" Margin="46,787,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
-        <Image x:Name="img20" Height="132" Margin="46,919,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img5" Height="132" Margin="46,198,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img8" Height="132" Margin="46,264,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img11" Height="132" Margin="46,330,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img14" Height="132" Margin="46,401,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img17" Height="132" Margin="46,472,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="img20" Height="132" Margin="46,538,569,0" Width="86" VerticalAlignment="Top" Grid.Column="1"/>
         <Image x:Name="img3" Height="132" Margin="246,128,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img6" Height="132" Margin="246,260,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img9" Height="132" Margin="246,392,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img12" Height="132" Margin="246,524,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img15" Height="132" Margin="246,656,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img18" Height="132" Margin="246,788,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Image x:Name="img21" Height="132" Margin="246,920,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
-        <Label x:Name="labelTheCard" Content="Your Card is ..." HorizontalAlignment="Left" Margin="448,82,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" FontWeight="Bold" Background="#FF0A0000" Height="25" IsEnabled="False" FontSize="16" FontFamily="Tempus Sans ITC"/>
-        <Image x:Name="imgTheCardRevealed" HorizontalAlignment="Left" Height="173" Margin="452,116,0,0" VerticalAlignment="Top" Width="106" Grid.Column="1"/>
+        <Image x:Name="img6" Height="132" Margin="246,198,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Image x:Name="img9" Height="132" Margin="246,264,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Image x:Name="img12" Height="132" Margin="246,330,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Image x:Name="img15" Height="132" Margin="246,401,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Image x:Name="img18" Height="132" Margin="246,467,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Image x:Name="img21" Height="132" Margin="246,538,369,0" Width="86" Grid.Column="1" VerticalAlignment="Top"/>
+        <Label x:Name="labelTheCard" Content="Your Card is ..." HorizontalAlignment="Left" Margin="511,83,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" FontWeight="Bold" Background="#FF0A0000" Height="25" IsEnabled="False" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <Image x:Name="imgTheCardRevealed" HorizontalAlignment="Left" Height="173" Margin="511,127,0,0" VerticalAlignment="Top" Width="106" Grid.Column="1"/>
         <Label x:Name="lblHeading" Content="The 21 Card Trick" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Width="375" FontSize="48" FontWeight="Bold" FontFamily="Tempus Sans ITC" Grid.Column="1" IsEnabled="False">
             <Label.Background>
                 <SolidColorBrush Color="#FF110101"/>

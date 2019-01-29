@@ -22,17 +22,20 @@ namespace _21cardtrick
     {
         public static bool GameStarted = false;
         Deck Deck;
-        internal object imgTheCard;
+        Dealer dealer;
+        //internal object imgTheCard;
 
         public MainWindow()
         {
             InitializeComponent();
             Deck = new Deck();
+            dealer = new Dealer();
         }
 
         private void cmd_PLayGame(object sender, RoutedEventArgs e)
         {
-            GameStarted = true; 
+            GameStarted = true;
+            dealer.ShowCards();
         }
 
         private void cmd_Column1(object sender, RoutedEventArgs e)

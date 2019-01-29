@@ -8,9 +8,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Controls;
 using Microsoft.CSharp;
 using System.CodeDom.Compiler;
-using _21cardtrick;
 
-namespace CS3750CardTrick
+namespace _21cardtrick
 {
     class Dealer
     {
@@ -29,11 +28,10 @@ namespace CS3750CardTrick
 
         public Dealer()
         {
-//<<<<<<< HEAD
-            //deck21 = deck.getDeck21();
-//=======
-            deck21 = deck.Deal21();
-//>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
+
+            deck21 = deck.GenerateDeck();
+
+            //deck21 = deck.Deal21();
 
 
         }
@@ -52,28 +50,28 @@ namespace CS3750CardTrick
             img.Width = 25;
             img.Stretch = Stretch.Fill;
 
-            window.img1.Source = imgs.ConvertFromString("..\\..\\" + deck21[0].getFace()) as ImageSource;
-            window.img2.Source = imgs.ConvertFromString("..\\..\\" + deck21[1].getFace()) as ImageSource;
-            window.img3.Source = imgs.ConvertFromString("..\\..\\" + deck21[2].getFace()) as ImageSource;
-            window.img4.Source = imgs.ConvertFromString("..\\..\\" + deck21[3].getFace()) as ImageSource;
-            window.img5.Source = imgs.ConvertFromString("..\\..\\" + deck21[4].getFace()) as ImageSource;
-            window.img6.Source = imgs.ConvertFromString("..\\..\\" + deck21[5].getFace()) as ImageSource;
-            window.img7.Source = imgs.ConvertFromString("..\\..\\" + deck21[6].getFace()) as ImageSource;
-            window.img8.Source = imgs.ConvertFromString("..\\..\\" + deck21[7].getFace()) as ImageSource;
-            window.img9.Source = imgs.ConvertFromString("..\\..\\" + deck21[8].getFace()) as ImageSource;
+            window.img1.Source = imgs.ConvertFromString( deck21[0].GetCardPicture()) as ImageSource;
+            window.img2.Source = imgs.ConvertFromString( deck21[1].GetCardPicture()) as ImageSource;
+            window.img3.Source = imgs.ConvertFromString( deck21[2].GetCardPicture()) as ImageSource;
+            window.img4.Source = imgs.ConvertFromString( deck21[3].GetCardPicture()) as ImageSource;
+            window.img5.Source = imgs.ConvertFromString( deck21[4].GetCardPicture()) as ImageSource;
+            window.img6.Source = imgs.ConvertFromString( deck21[5].GetCardPicture()) as ImageSource;
+            window.img7.Source = imgs.ConvertFromString( deck21[6].GetCardPicture()) as ImageSource;
+            window.img8.Source = imgs.ConvertFromString( deck21[7].GetCardPicture()) as ImageSource;
+            window.img9.Source = imgs.ConvertFromString( deck21[8].GetCardPicture()) as ImageSource;
 
-            window.img10.Source = imgs.ConvertFromString("..\\..\\" + deck21[9].getFace()) as ImageSource;
-            window.img11.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
-            window.img12.Source = imgs.ConvertFromString("..\\..\\" + deck21[11].getFace()) as ImageSource;
-            window.img13.Source = imgs.ConvertFromString("..\\..\\" + deck21[12].getFace()) as ImageSource;
-            window.img14.Source = imgs.ConvertFromString("..\\..\\" + deck21[13].getFace()) as ImageSource;
-            window.img15.Source = imgs.ConvertFromString("..\\..\\" + deck21[14].getFace()) as ImageSource;
-            window.img16.Source = imgs.ConvertFromString("..\\..\\" + deck21[15].getFace()) as ImageSource;
-            window.img17.Source = imgs.ConvertFromString("..\\..\\" + deck21[16].getFace()) as ImageSource;
-            window.img18.Source = imgs.ConvertFromString("..\\..\\" + deck21[17].getFace()) as ImageSource;
-            window.img19.Source = imgs.ConvertFromString("..\\..\\" + deck21[18].getFace()) as ImageSource;
-            window.img20.Source = imgs.ConvertFromString("..\\..\\" + deck21[19].getFace()) as ImageSource;
-            window.img21.Source = imgs.ConvertFromString("..\\..\\" + deck21[20].getFace()) as ImageSource;
+            window.img10.Source = imgs.ConvertFromString( deck21[9].GetCardPicture()) as ImageSource;
+            window.img11.Source = imgs.ConvertFromString( deck21[10].GetCardPicture()) as ImageSource;
+            window.img12.Source = imgs.ConvertFromString(deck21[11].GetCardPicture()) as ImageSource;
+            window.img13.Source = imgs.ConvertFromString( deck21[12].GetCardPicture()) as ImageSource;
+            window.img14.Source = imgs.ConvertFromString( deck21[13].GetCardPicture()) as ImageSource;
+            window.img15.Source = imgs.ConvertFromString( deck21[14].GetCardPicture()) as ImageSource;
+            window.img16.Source = imgs.ConvertFromString(deck21[15].GetCardPicture()) as ImageSource;
+            window.img17.Source = imgs.ConvertFromString( deck21[16].GetCardPicture()) as ImageSource;
+            window.img18.Source = imgs.ConvertFromString( deck21[17].GetCardPicture()) as ImageSource;
+            window.img19.Source = imgs.ConvertFromString( deck21[18].GetCardPicture()) as ImageSource;
+            window.img20.Source = imgs.ConvertFromString(deck21[19].GetCardPicture()) as ImageSource;
+            window.img21.Source = imgs.ConvertFromString( deck21[20].GetCardPicture()) as ImageSource;
         }
 
 
@@ -99,11 +97,11 @@ namespace CS3750CardTrick
             img.Stretch = Stretch.Fill;
             // after DealNumber is at least 3
             // selected card is the 11th
-//<<<<<<< HEAD
-            //window.imgTheCard.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
-//=======
-            window.imgTheCardRevealed.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
-//>>>>>>> 29cd29ba594cc936117ff5e957ae99fb4ed089cb
+
+            //window.imgTheCard.Source = imgs.ConvertFromString(@"C:\Users\Ahmed\Desktop\21cardtrick-master (1)\21cardtrick-master\21cardtrick\21cardtrick\CardImages\" + deck21[10].GetCardPicture()) as ImageSource;
+
+            window.imgTheCardRevealed.Source = imgs.ConvertFromString(deck21[10].GetCardPicture()) as ImageSource;
+
 
         }
 
@@ -162,5 +160,8 @@ namespace CS3750CardTrick
 
 
     } // end Dealer()
+
 }
+
+
 

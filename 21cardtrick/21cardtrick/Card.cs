@@ -37,7 +37,7 @@ namespace _21cardtrick
                     Value = cardNum;
                     break;
             }
-            CardFaceImg = "Cards/" + (int)_suit + "-" + CardNum + ".jpg";
+            CardFaceImg = @"C:\Users\Ahmed\Desktop\21cardtrick-master (1)\21cardtrick-master\21cardtrick\21cardtrick\CardImages\" +(int)_suit + "-" + CardNum + ".png";
         }
 
         public string GetCardPicture()
@@ -45,9 +45,9 @@ namespace _21cardtrick
             return FaceUp ? CardFaceImg : CardBackImg;
         }
 
-        internal string getFace()
-        {
-            throw new NotImplementedException();
-        }
+        //internal string getFace()
+        //{
+          //  throw new NotImplementedException();
+        //}
     }
 }
