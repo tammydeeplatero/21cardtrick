@@ -21,6 +21,8 @@ namespace _21cardtrick
     public partial class MainWindow : Window
     {
         public static bool GameStarted = false;
+        public static int counter = 0;
+        public static int chosenColumn = 0;
         Deck Deck;
         Dealer dealer;
         //internal object imgTheCard;
@@ -30,26 +32,52 @@ namespace _21cardtrick
             InitializeComponent();
             Deck = new Deck();
             dealer = new Dealer();
+
         }
 
         private void cmd_PLayGame(object sender, RoutedEventArgs e)
         {
+
             GameStarted = true;
             dealer.ShowCards();
         }
 
         private void cmd_Column1(object sender, RoutedEventArgs e)
         {
+            counter += 1;
+            chosenColumn = 0;
+            checkGame(); 
 
         }
 
         private void cmd_Column2(object sender, RoutedEventArgs e)
         {
+            counter += 1;
+            chosenColumn = 1;
+            checkGame();
 
         }
 
         private void cmd_Column3(object sender, RoutedEventArgs e)
         {
+            counter += 1;
+            chosenColumn = 2;
+            checkGame();
+
+        }
+
+        private void checkGame()
+        {
+            if (counter == 3)
+            {
+                dealer.RevealCard();
+                GameStarted = false;
+                //disable column buttons
+            }
+            else
+            {
+                dealer.PickupCards(chosenColumn);
+            }
 
         }
     }

@@ -26,12 +26,12 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
             </Button.Background>
         </Button>
-        <Button Content="Column2" Margin="52,84,574,0" Width="75" Height="20" Click="cmd_Column2" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="14" Grid.Column="1">
+        <Button x:Name="Column2" Content="Column2" Margin="52,84,574,0" Width="75" Height="20" Click="cmd_Column2" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="14" Grid.Column="1">
             <Button.Background>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
             </Button.Background>
         </Button>
-        <Button Content="Column3" Margin="253,84,373,0" Width="75" Height="20" Click="cmd_Column3" Grid.Column="1" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="14">
+        <Button x:Name="Column3" Content="Column3" Margin="253,84,373,0" Width="75" Height="20" Click="cmd_Column3" Grid.Column="1" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Tempus Sans ITC" FontSize="14">
             <Button.Background>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
             </Button.Background>

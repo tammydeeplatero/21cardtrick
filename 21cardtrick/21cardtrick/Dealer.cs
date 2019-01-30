@@ -19,12 +19,12 @@ namespace _21cardtrick
         //public static List<Card> deck21 = new List<Card>(21);
         Board board = new Board();
 
-        Column column0 = new Column(0);
-        Column column1 = new Column(1);
-        Column column2 = new Column(2);
-
         Deck deck = new Deck();
         List<Card> deck21 = new List<Card>(21);
+
+        static List<Card> cardList0 = new List<Card>();
+        static List<Card> cardList1 = new List<Card>();
+        static List<Card> cardList2 = new List<Card>();
 
         public Dealer()
         {
@@ -38,7 +38,8 @@ namespace _21cardtrick
 
         public void ShowCards() // Testing taking out args deck is never used. Deck deck
         {
-            List<Card> cardList = new List<Card>();
+
+
             ImageSourceConverter imgs = new ImageSourceConverter();
             MainWindow window = App.Current.Windows.OfType<MainWindow>().SingleOrDefault(x => x.IsActive);
 
@@ -49,6 +50,31 @@ namespace _21cardtrick
             img.Height = 60;
             img.Width = 25;
             img.Stretch = Stretch.Fill;
+
+            cardList0.Add(deck21[0]);
+            cardList0.Add(deck21[3]);
+            cardList0.Add(deck21[6]);
+            cardList0.Add(deck21[9]);
+            cardList0.Add(deck21[12]);
+            cardList0.Add(deck21[15]);
+            cardList0.Add(deck21[18]);
+
+            cardList1.Add(deck21[1]);
+            cardList1.Add(deck21[4]);
+            cardList1.Add(deck21[7]);
+            cardList1.Add(deck21[10]);
+            cardList1.Add(deck21[13]);
+            cardList1.Add(deck21[16]);
+            cardList1.Add(deck21[19]);
+
+            cardList2.Add(deck21[2]);
+            cardList2.Add(deck21[5]);
+            cardList2.Add(deck21[8]);
+            cardList2.Add(deck21[11]);
+            cardList2.Add(deck21[14]);
+            cardList2.Add(deck21[17]);
+            cardList2.Add(deck21[20]);
+
 
             window.img1.Source = imgs.ConvertFromString( deck21[0].GetCardPicture()) as ImageSource;
             window.img2.Source = imgs.ConvertFromString( deck21[1].GetCardPicture()) as ImageSource;
@@ -113,46 +139,46 @@ namespace _21cardtrick
             List<Card> deck = new List<Card>();
 
 
-            column0 = board.getColumn(0);
-            column1 = board.getColumn(1);
-            column2 = board.getColumn(2);
+            //column0 = board.getColumn(0);
+            //column1 = board.getColumn(1);
+            //column2 = board.getColumn(2);
 
             if (columnId == 0)
             {
-                addCardsToDeck(column1, deck);
-                addCardsToDeck(column0, deck);
-                addCardsToDeck(column2, deck);
+                addCardsToDeck(cardList1, deck);
+                addCardsToDeck(cardList0, deck);
+                addCardsToDeck(cardList2, deck);
             }
 
             if (columnId == 1)
             {
-                addCardsToDeck(column0, deck);
-                addCardsToDeck(column1, deck);
-                addCardsToDeck(column2, deck);
+                addCardsToDeck(cardList0, deck);
+                addCardsToDeck(cardList1, deck);
+                addCardsToDeck(cardList2, deck);
             }
 
             if (columnId == 2)
             {
-                addCardsToDeck(column0, deck);
-                addCardsToDeck(column2, deck);
-                addCardsToDeck(column1, deck);
+                addCardsToDeck(cardList0, deck);
+                addCardsToDeck(cardList2, deck);
+                addCardsToDeck(cardList1, deck);
             }
 
-            column0.clearList();
-            column1.clearList();
-            column2.clearList();
+            cardList0.Clear();
+            cardList1.Clear();
+            cardList2.Clear();
 
             ////////need this to update the deck21 list so the showCard will show the new deck.
             deck21 = deck;
 
-            Deal();
+            ShowCards();
             dealNumber++;
             return;
         }
 
-        public void addCardsToDeck(Column column, List<Card> deck)
+        public void addCardsToDeck(List<Card> cardList, List<Card> deck)
         {
-            foreach (Card card in column.getCardList())
+            foreach (Card card in cardList)
             {
                 deck.Add(card);
             }

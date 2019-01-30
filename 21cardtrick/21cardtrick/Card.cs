@@ -37,7 +37,7 @@ namespace _21cardtrick
                     Value = cardNum;
                     break;
             }
-            CardFaceImg = @"C:\Users\Ahmed\Desktop\21cardtrick-master (1)\21cardtrick-master\21cardtrick\21cardtrick\CardImages\" +(int)_suit + "-" + CardNum + ".png";
+            CardFaceImg = @"C:\dev\duetomorrow\21cardtrick\21cardtrick\21cardtrick\CardImages\" + (int)_suit + "-" + CardNum + ".png";
         }
 
         public string GetCardPicture()
