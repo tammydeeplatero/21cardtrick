@@ -21,6 +21,7 @@ namespace _21cardtrick
     public partial class MainWindow : Window
     {
         public static bool GameStarted = false;
+        public static bool PickedCard = false;
         public static int counter = 0;
         public static int chosenColumn = 0;
         Deck Deck;
@@ -32,13 +33,44 @@ namespace _21cardtrick
             InitializeComponent();
             Deck = new Deck();
             dealer = new Dealer();
+            ButtonVisibility();
+            
+        }
 
+        private void ButtonVisibility()
+        {
+            if (GameStarted == false)
+            {
+                Column1.IsEnabled = false;
+                Column2.IsEnabled = false;
+                Column3.IsEnabled = false;
+                PlayGame.IsEnabled = true;
+                Pick.IsEnabled = false;
+            }
+            else if (GameStarted == true && PickedCard == true)
+            {
+                PlayGame.IsEnabled = false;
+                Pick.IsEnabled = false;
+                Column1.IsEnabled = true;
+                Column2.IsEnabled = true;
+                Column3.IsEnabled = true;
+            }
+            else if (GameStarted == true && PickedCard == false)
+            {
+                Pick.IsEnabled = true;
+                PlayGame.IsEnabled = false;
+            }
+            else
+            {
+
+            }
         }
 
         private void cmd_PLayGame(object sender, RoutedEventArgs e)
         {
 
             GameStarted = true;
+            ButtonVisibility();
             dealer.ShowCards();
         }
 
@@ -72,13 +104,23 @@ namespace _21cardtrick
             {
                 dealer.RevealCard();
                 GameStarted = false;
+                PickedCard = false;
+                ButtonVisibility();
                 //disable column buttons
+                
             }
             else
             {
                 dealer.PickupCards(chosenColumn);
             }
 
+        }
+
+        private void cmd_PickYourCard(object sender, RoutedEventArgs e)
+        {
+            GameStarted = true;
+            PickedCard = true;
+            ButtonVisibility();
         }
     }
 }

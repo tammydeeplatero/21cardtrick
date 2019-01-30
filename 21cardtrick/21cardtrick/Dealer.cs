@@ -17,7 +17,7 @@ namespace _21cardtrick
 
         //public static Deck deck = new Deck(); // just want the top 21 cards to work with
         //public static List<Card> deck21 = new List<Card>(21);
-        Board board = new Board();
+
 
         Deck deck = new Deck();
         List<Card> deck21 = new List<Card>(21);
@@ -98,16 +98,6 @@ namespace _21cardtrick
             window.img19.Source = imgs.ConvertFromString( deck21[18].GetCardPicture()) as ImageSource;
             window.img20.Source = imgs.ConvertFromString(deck21[19].GetCardPicture()) as ImageSource;
             window.img21.Source = imgs.ConvertFromString( deck21[20].GetCardPicture()) as ImageSource;
-        }
-
-
-        public void Deal()
-        {
-            // arranges cards on board into columns
-            for (int i = 0; i < 21; i++)
-            {
-                board.addToColumn(i % 3, deck21[i]);
-            }
         }
 
         public void RevealCard()
